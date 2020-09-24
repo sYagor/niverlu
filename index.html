@@ -3,18 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>Luísa</title>
-      <!--  <link rel="stylesheet" href="Scripts/Style.css" /> -->
-                <link rel="stylesheet" href="Scripts/teste.css" />
+        <link rel="stylesheet" href="Scripts/Style.css" /> 
+        <link rel="stylesheet" href="Scripts/Reset.css"/>        
+   <!-- <link rel="stylesheet" href="Scripts/teste.css" />-->
+                
         <link rel="icon" type="imagem/png" href="img/capa.png" />
     </head>
     <body>
         <header>
             <nav>
-                <div class="caixa">
-                    <img src="img/capa.png">
+                    <img src="img/capa.png" href="home" class="imgcat">
                     <a href="">Mensagens</a>
                     <a href="">Fotos</a>
-                </div>
             </nav>
         </header>   
         <main>   
@@ -28,6 +28,9 @@
                 <li><button id="btnla" class="btnPessoa"><img src="Bts/LauraBtn.png"></button></li>
                 <li><button id="btnlu" class="btnPessoa"><img src="Bts/LuisaBtn.png"></button></li>
             </ul>    
+            <img src="Img/Bolavazia.png" id="FtEsquerda">
+            <img src="Img/Bolavazia2.png" id="FtDireita">
+            <img src="Img/imgvazia.png" id="ImgCentro">
             <img src="Img/caixafala.png" class="fala">
             <img src="Pessoas/Ju.png" class="Personagem" id="CorpoTd">
             <button id="BtnAvanca"><img src="Bts/AvancaBtn.png" class="AvancaBtn"></button>
@@ -38,75 +41,10 @@
         </main>
           
     </section>
-        <script>
-            document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js quando a pagina carregar
-                var botoes = document.getElementsByClassName("btnPessoa");
-                console.log(botoes);
-                
-                Array.prototype.forEach.call(botoes, function(el) {
-                    
-                    el.addEventListener("click", function(){ //el é o botão que clicou
-                       if(el.id =="btnju"){
-                        alert("foi");
-                       } 
-                    });
-                });
-                            
-            });
-                            var Pessoa = 0     // 0= ninguém, 1 = Julia, 2= Hortencia 3= Yago 4= Savic 5=Laura e 6= Luisa
-            var CaixadeTexto = 0  //Para definir qual fala irá aparecer 
-          
-                function julia() {
-                    Pessoa = 1;
-                    if(Pessoa == 1){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Ju.png';
-                                                
-                    }                            
-                }
+        <script src="js/botoes.js"></script>
 
-                function hortencia(){
-                    Pessoa = 2;
-                    if(Pessoa == 2){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Ho.png'
-                    }             
-                }
+        
 
-                function yago(){
-                    Pessoa = 3;
-                    if(Pessoa == 3){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Ya.png'
-                    }             
-                }
-                function savic(){
-                    Pessoa = 4;
-                    if(Pessoa == 4){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Sa.png'
-                    }             
-                }
-                function laura(){
-                    Pessoa = 5;
-                    if(Pessoa == 5){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/La.png'
-                    }             
-                }
-                function luisa(){
-                    Pessoa = 6;
-                    if(Pessoa == 6){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Lu.png'
-                    }             
-                }
-                function AvancaFala(){
-                    CaixadeTexto++;
-                    if(Pessoa == 1 & CaixadeTexto == 1){ //Falas Julia
-                        alert("isso ai " + CaixadeTexto);
-                    }                 
-                    if(Pessoa == 1 & CaixadeTexto == 2){
-                        alert("isso ai " + CaixadeTexto);
-                    }
-                    
-                }
-
-        </script>
     
     </body>
 </html>
