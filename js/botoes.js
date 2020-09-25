@@ -10,12 +10,16 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FalasLa = ["Experlliarmus", "CARAI"];
     var FalasYa = ["O importante é o que importa", "Isso ai"];
     var FalasHo = ["1. O começo...","Campinas, 17/10/1995 um bebé de olhos castanhos claros, sobre sua cabeça fios castanhos, chorava desorientada, com tudo.", "Nasce ali a segunda filha de um lindo casal, Luciana e José Luis, Desde cedo seu sorriso contagiava a todos em sua volta.",
-"Sua mãe a nomeou Luísa, a guerreira gloriosa, com o passar dos anos a criança ganhou grande apreço por livros e pela", "Cultura Geek, houve grandes momentos em sua vida, a formatura do Ensino médio, do curso de confeitaria, caligrafia,", "Do curso de inglês ou daquela vez que derrotou o alfaiate no The Witcher 2. Assim como todos também teve seus baixos,",
-"Mas conseguiu superar tudo com a sua força de vontade e ajuda da sua família, hoje é ainda mais incrível e especial que ontem.","Tenho muito orgulho por estar contado um resumo da vida dela minha amada dona, Luísa, Feliz aniversário!!!!", "Fim!"];
+    "Sua mãe a nomeou Luísa, a guerreira gloriosa, com o passar dos anos a criança ganhou grande apreço por livros e pela", "Cultura Geek, houve grandes momentos em sua vida, a formatura do Ensino médio, do curso de confeitaria, caligrafia,", "Do curso de inglês ou daquela vez que derrotou o alfaiate no The Witcher 2. Assim como todos também teve seus baixos,",
+    "Mas conseguiu superar tudo com a sua força de vontade e ajuda da sua família, hoje é ainda mais incrível e especial que ontem.","Tenho muito orgulho por estar contado um resumo da vida dela minha amada dona, Luísa, Feliz aniversário!!!!", "Fim!"];
     var FalasLu = ["Hmm...", "Fuck"];
     var FalasSa = ["Miau!", "Miau..."];
-    var FotosJu = ["Fts/JuliaFt1.png","Fts/JuliaFt2.png"]
-    var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt2.png"]
+    var FotosJu = ["Fts/JuliaFt1.png","Fts/JuliaFt2.png","Fts/JuliaFt3.png","Fts/JuliaFt4.png","Fts/JuliaFt5.png","Fts/JuliaFt6.png","Fts/JuliaFt7.png","Fts/JuliaFt8.png"]
+    var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt2.png","Fts/LauraFt3.png","Fts/LauraFt4.png"];
+    var FotosYa = ["Fts/YagoFt1.png","Fts/YagoFt2.png","Fts/YagoFt3.png","Fts/YagoFt4.png"];
+    var FotosSa = ["Fts/SavicFt1.png","Fts/SavicFt2.png","Fts/SavicFt3.png","Fts/SavicFt4.png"];
+    var FotosLu = ["Fts/LuisaFt1.png","Fts/LuisaFt2.png","Fts/LuisaFt3.png","Fts/LuisaFt4.png"];
+    var FotosHo = ["Fts/HortenciaFt1.png","Fts/HortenciaFt2.png","Fts/HortenciaFt3.png","Fts/HortenciaFt4.png","Fts/HortenciaFt5.png","Fts/HortenciaFt6.png","Fts/HortenciaFt7.png","Fts/HortenciaFt8.png","Fts/HortenciaFt9.png","Fts/HortenciaFt10.png","Fts/HortenciaFt11.png","Fts/HortenciaFt12.png","Fts/HortenciaFt13.png","Fts/HortenciaFt14.png","Fts/HortenciaFt15.png","Fts/HortenciaFt16.png","Fts/HortenciaFt17.png","Fts/HortenciaFt18.png"];
     var btnselecionado;
     var i = 0;
     var f= 0;
@@ -38,13 +42,13 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
         if(btnselecionado == "btnla" ) {
             alert(FalasLa[i]);
             i++;
-            if(f<FotosJu.length){
-                FtEsquerda.src = FotosJu[f];
+            if(f<FotosLa.length){
+                FtEsquerda.src = FotosLa[f];
                 f++;
-                FtDireita.src = FotosJu[f];
+                FtDireita.src = FotosLa[f];
                 f++;
-                
-            ImgCentro.src= "Img/JuliaSimbolo.png"
+            } 
+            ImgCentro.src= "Img/LauraSimbolo.png"
             if(i > FalasLa.length){
                 i=0;
              }      
@@ -54,48 +58,72 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
         if(btnselecionado == "btnya" ) {
             alert(FalasYa[i]);
             i++;
+            if(f<FotosYa.length){
+                FtEsquerda.src = FotosYa[f];
+                f++;
+                FtDireita.src = FotosYa[f];
+                f++;
+            } 
+            ImgCentro.src= "Img/YagoSimbolo.png"
             if(i > FalasYa.length){
                 i=0;
-             }      
+             }       
         } 
 
         if(btnselecionado == "btnho" ) {
             alert(FalasHo[i]);
             i++;
+            if(f<FotosHo.length){
+                FtEsquerda.src = FotosHo[f];
+                f++;
+                FtDireita.src = FotosHo[f];
+                f++;
+            } 
+            ImgCentro.src= "Img/HortenciaSimbolo.png"
             if(i > FalasHo.length){
                 i=0;
-             }      
+             }        
         } 
 
         if(btnselecionado == "btnsa" ) {
             alert(FalasSa[i]);
             i++;
+            if(f<FotosSa.length){
+                FtEsquerda.src = FotosSa[f];
+                f++;
+                FtDireita.src = FotosSa[f];
+                f++;
+            } 
+            ImgCentro.src= "Img/SavicSimbolo.png"
             if(i > FalasSa.length){
                 i=0;
-             }      
+             }        
         } 
 
         if(btnselecionado == "btnlu" ) {
             alert(FalasLu[i]);
             i++;
+            if(f<FotosLu.length){
+                FtEsquerda.src = FotosLu[f];
+                f++;
+                FtDireita.src = FotosLu[f];
+                f++;
+            } 
+            ImgCentro.src= "Img/LuisaSimbolo.png"
             if(i > FalasLu.length){
                 i=0;
-             }      
+             }       
         } 
-        
-        /*for(var i; i = FalasJu.length; i++){
-            if(foiclicado == true){
-            alert(FalasJu[i]);    
-            foiclicado = false;
-            }
-            
-            } */  
-        });
+    
+    });
     Array.prototype.forEach.call(botoes, function(el) {
         el.addEventListener("click", function(){ //el é o botão que clicou
            btnselecionado = el.id
            i=0;
            f= 0;
+           FtEsquerda.src = "img/bolavazia.png";
+           FtDireita.src = "img/bolavazia2.png";
+           ImgCentro.src= "Img/imgvazia.png";
             if(el.id == "btnju" ){
                 Pessoa.src="Pessoas/Ju.png"
                             } 
@@ -115,104 +143,8 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
                 Pessoa.src="Pessoas/Lu.png"
             } 
             
-            
-            /*
-           if(el.id == "btnla"){
-                avanca=0;
-                botaoavanca.addEventListener("click", function(){
-                avanca ++;
-                    if(avanca == 1 ){
-                        alert("Laura");    //colocar falas da Laura                                    
-                    }
-                    if(avanca == 2){
-                    alert("Laura2");    //colocar falas da Laura                                 
-                    }
-                });
-            }
-           
-           if(el.id =="btnya"){
-            avanca=0;
-            if(avanca == 1){
-                 alert("Yago");//colocar falas do Yago
-            }
-           }
-           if(el.id =="btnho"){
-            avanca=0;
-            if(avanca == 1){
-                alert("Hortência");//colocar falas da Hortência
-            }
-           }
-           if(el.id =="btnsa"){
-            avanca=0;
-            if(avanca == 1){
-                alert("Savic");//colocar falas da Savic
-            }
-           }
-           if(el.id =="btnlu"){
-            avanca=0;
-            if(avanca == 1){
-                alert("Luísa"); //colocar falas da Luísa
-            }
-           }   */
         });
     });
   
-                
-});
+});              
 
-
-
-  
-            /*
-                            var Pessoa = 0     // 0= ninguém, 1 = Julia, 2= Hortencia 3= Yago 4= Savic 5=Laura e 6= Luisa
-              //Para definir qual fala irá aparecer 
-          
-                function julia() {
-                    Pessoa = 1;
-                    if(Pessoa == 1){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Ju.png';
-                                                
-                    }                            
-                }
-
-                function hortencia(){
-                    Pessoa = 2;
-                    if(Pessoa == 2){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Ho.png'
-                    }             
-                }
-
-                function yago(){
-                    Pessoa = 3;
-                    if(Pessoa == 3){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Ya.png'
-                    }             
-                }
-                function savic(){
-                    Pessoa = 4;
-                    if(Pessoa == 4){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Sa.png'
-                    }             
-                }
-                function laura(){
-                    Pessoa = 5;
-                    if(Pessoa == 5){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/La.png'
-                    }             
-                }
-                function luisa(){
-                    Pessoa = 6;
-                    if(Pessoa == 6){
-                        let Pessoa = document.getElementById('CorpoTd').src = 'Pessoas/Lu.png'
-                    }             
-                }
-                function AvancaFala(){
-                    CaixadeTexto++;
-                    if(Pessoa == 1 & CaixadeTexto == 1){ //Falas Julia
-                        alert("isso ai " + CaixadeTexto);
-                    }                 
-                    if(Pessoa == 1 & CaixadeTexto == 2){
-                        alert("isso ai " + CaixadeTexto);
-                    }
-                    
-                } */
