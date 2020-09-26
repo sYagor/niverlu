@@ -10,6 +10,7 @@ header{
   height: 80px;
 }
 
+  
 .caixa{
   width: 940px;
   position: relative;
@@ -132,4 +133,25 @@ li{
   position: absolute;
   top:480px; 
   left:220px;
+}
+.video{
+  background-color: rgba(138, 44, 226, 0.5);
+  position: relative;
+  top: 132px;
+  height: 550px;
+
+}
+iframe{
+  position: relative;
+  top: 50px;
+  left: 300px;
+}
+
+h2{
+  position: relative;
+  top:30px;
+  left: 600px;
+  color: white;
+  font-family: cursive;
+  
 }
