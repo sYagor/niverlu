@@ -81,7 +81,7 @@ li{
   justify-content: space-between;
   box-sizing: border-box;
   padding: 30px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .caixatexto .conteudo{
   flex-grow: 1;
