@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FalasSa = ["Miau!", "Miau..."];
     var FalasCa = ["Qual é a fruta favorita do Beethoven?","Ba - na - na - naaaaaa"];
     var FotosJu = ["Fts/JuliaFt1.png","Fts/JuliaFt2.png","Fts/JuliaFt3.png","Fts/JuliaFt4.png","Fts/JuliaFt5.png","Fts/JuliaFt6.png","Fts/JuliaFt7.png","Fts/JuliaFt8.png"]
-    var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt2.png","Fts/LauraFt3.png","Fts/LauraFt4.png"];
+    var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt3.png","Fts/LauraFt2.png","Fts/LauraFt4.png"];
     var FotosYa = ["Fts/YagoFt1.png","Fts/YagoFt2.png","Fts/YagoFt3.png","Fts/YagoFt4.png","Fts/YagoFt5.png","Fts/YagoFt6.png","Fts/YagoFt7.png","Fts/YagoFt8.png",];
     var FotosSa = ["Fts/SavicFt1.png","Fts/SavicFt2.png","Fts/SavicFt3.png","Fts/SavicFt4.png"];
-    var FotosLu = ["Fts/LuisaFt1.png","Fts/LuisaFt2.png","Fts/LuisaFt3.png","Fts/LuisaFt4.png","Fts/LuisaFt5.png","Fts/LuisaFt6.png","Fts/LuisaFt7.png","Fts/LuisaFt8.png"];
+    var FotosLu = ["Fts/LuisaFt1.png","Fts/LuisaFt4.png","Fts/LuisaFt3.png","Fts/LuisaFt2.png","Fts/LuisaFt5.png","Fts/LuisaFt6.png","Fts/LuisaFt7.png","Fts/LuisaFt8.png"];
     var FotosHo = ["Fts/HortenciaFt1.png","Fts/HortenciaFt2.png","Fts/HortenciaFt3.png","Fts/HortenciaFt4.png","Fts/HortenciaFt5.png","Fts/HortenciaFt6.png","Fts/HortenciaFt7.png","Fts/HortenciaFt8.png","Fts/HortenciaFt9.png","Fts/HortenciaFt10.png","Fts/HortenciaFt11.png","Fts/HortenciaFt12.png","Fts/HortenciaFt13.png","Fts/HortenciaFt14.png","Fts/HortenciaFt15.png","Fts/HortenciaFt16.png","Fts/HortenciaFt17.png","Fts/HortenciaFt18.png"];
     var FotosCa = ["Fts/CarolFt1.png","Fts/CarolFt2.png"];
     var Musica = ["Musica/OneMoreTime.mp3", "Musica/noise.mp3", "Musica/Monsoon.mp3","Musica/DontJump.mp3"];

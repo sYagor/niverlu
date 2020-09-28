@@ -64,7 +64,7 @@ li{
 }
 .Blackbox{
   background-color: black;
-  height: 360px;
+  height: 260px;
   width: 70%;
   border-color: blueviolet;
   border-style: groove;
@@ -81,7 +81,7 @@ li{
   justify-content: space-between;
   box-sizing: border-box;
   padding: 30px;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 .caixatexto .conteudo{
   flex-grow: 1;
