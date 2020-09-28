@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Luísa</title>
-        <link rel="stylesheet" href="Scripts/Style.css" /> 
         <link rel="stylesheet" href="Scripts/Reset.css"/>        
-   <!-- <link rel="stylesheet" href="Scripts/teste.css" />-->
+        <!-- <link rel="stylesheet" href="Scripts/Style.css" /> -->
+        <link rel="stylesheet" href="Scripts/teste.css" />
                 
         <link rel="icon" type="imagem/png" href="img/capa.png" />
     </head>
@@ -13,10 +13,12 @@
         <header>
             <nav>   
                 <div class="caixa">
-                    <audio></audio>
+                    <audio id="audio" src=""></audio>
                     <img src="img/capa.png" href="home" class="imgcat" id="Gato">
-                    <a href="">Mensagens</a>
-                    <a href="">Fotos</a>
+                    <nav>
+                        <a href="">Mensagens</a>
+                        <a href="">Fotos</a>
+                    </nav>
                 </div>
             </nav>
         </header>   
@@ -25,27 +27,35 @@
                 <li><button id="btnju" class="btnPessoa"><img src="Bts/JuliaBtn.png"> </button></li>
                 <li><button id="btnho" class="btnPessoa"><img src="Bts/HortenciaBtn.png"></button></li>
                 <li><button id="btnya" class="btnPessoa"><img src="Bts/YagoBtn.png" ></button></li>
+                <li><button id="btnca" class="btnPessoa"><img src="Bts/CarolBtn.png"></button></li>
             </ul>
+            <div class="Blackbox">
+                <img src="img/Bolavazia.png" id="FtEsquerda">
+                <img src="img/imgvazia.png" id="ImgCentro">
+                <img src="img/Bolavazia2.png" id="FtDireita">
+            </div>       
             <ul class="tabEsquerda">
                 <li><button id="btnsa" class="btnPessoa"><img src="Bts/SavicBtn.png"></button></li>
                 <li><button id="btnla" class="btnPessoa"><img src="Bts/LauraBtn.png"></button></li>
-                <li><button id="btnlu" class="btnPessoa"><img src="Bts/LuisaBtn.png"></button></li>
-            </ul>    
-            <img src="img/Bolavazia.png" id="FtEsquerda">
-            <img src="img/Bolavazia2.png" id="FtDireita">
-            <img src="img/imgvazia.png" id="ImgCentro">
-            <img src="img/caixafala.png" class="fala">
-            <img src="Pessoas/Ju.png" class="Personagem" id="CorpoTd">
-            <button id="BtnAvanca"><img src="Bts/AvancaBtn.png" class="AvancaBtn"></button>
+                <li><button id="btnlu" class="btnPessoa"><img src="Bts/LuisaBtn.png"></button></li>  
+                  
 
-            <div class="Blackbox">
-            </div>       
-             <div class="caixatexto">  </div>
+            </ul>    
+            
+            <div class="caixatexto">
+                <img src="Pessoas/Ju.png" class="Personagem" id="CorpoTd">
+                <div class="conteudo"><p id="falas">Clique em um personagem</p></div>
+                <button id="BtnAvanca"><img src="Bts/AvancaBtn.png" class="AvancaBtn"></button>
+            </div>
+            
         </main>
+        <br><br><br>
 
         <div class="video">
             <h2>Uma mensagem</h2>
-           <iframe width="760" height="415" src="https://www.youtube.com/embed/FGBhQbmPwH8" frameborder="100 px"  allow="cvaccelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <button id="btnya2" class="btnPessoa2"><img src="Bts/YagoBtn.png" ></button>
+            <iframe width="760" height="415" src="https://www.youtube.com/embed/FGBhQbmPwH8" frameborder="100 px"  allow="cvaccelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="vd"></iframe>
+            <button id="btnla2" class="btnPessoa2"><img src="Bts/LauraBtn.png"></button>
         </div>
           
     </section>
