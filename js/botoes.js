@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FalasSa = ["Miau!", "Miau..."];
     var FalasCa = ["Qual é a fruta favorita do Beethoven?","Ba - na - na - naaaaaa"];
     var FotosJu = ["Fts/JuliaFt1.png","Fts/JuliaFt2.png","Fts/JuliaFt3.png","Fts/JuliaFt4.png","Fts/JuliaFt5.png","Fts/JuliaFt6.png","Fts/JuliaFt7.png","Fts/JuliaFt8.png"]
-    var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt2.png","Fts/LauraFt5.png","Fts/LauraFt6.png"];
+    var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt3.png","Fts/LauraFt5.png","Fts/LauraFt6.png"];
     var FotosYa = ["Fts/YagoFt1.png","Fts/YagoFt2.png","Fts/YagoFt3.png","Fts/YagoFt4.png","Fts/YagoFt5.png","Fts/YagoFt6.png","Fts/YagoFt7.png","Fts/YagoFt8.png",];
     var FotosSa = ["Fts/SavicFt1.png","Fts/SavicFt2.png","Fts/SavicFt3.png","Fts/SavicFt4.png"];
     var FotosLu = ["Fts/LuisaFt1.png","Fts/LuisaFt9.png","Fts/LuisaFt3.png","Fts/LuisaFt2.png","Fts/LuisaFt5.png","Fts/LuisaFt6.png","Fts/LuisaFt7.png","Fts/LuisaFt8.png"];
