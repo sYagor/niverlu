@@ -166,8 +166,8 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
            btnselecionado = el.id
            i=0;
            f= 0;
-           FtEsquerda.src = "img/bolavazia.png";
-           FtDireita.src = "img/bolavazia2.png";
+           FtEsquerda.src = "img/Bolavazia.png";
+           FtDireita.src = "img/Bolavazia2.png";
            ImgCentro.src= "img/imgvazia.png";
             if(el.id == "btnju" ){
                 Pessoa.src="Pessoas/Ju.png"
