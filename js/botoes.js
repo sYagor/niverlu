@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FtEsquerda = document.getElementById("FtEsquerda");
     var ImgCentro = document.getElementById("ImgCentro");
     var BtnMusica = document.getElementById("Gato");
+    
     var Fala = document.getElementById("falas");
     var som = document.getElementById("audio");
     var Video = document.getElementById("vd");
