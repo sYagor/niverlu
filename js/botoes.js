@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var Video = document.getElementById("vd");
     var BtnV = document.getElementById("btnla2");
     var BtnV2 = document.getElementById("btnya2");
+    var name = document.querySelector(".caixatexto");
     var FalasJu = ["Parabéns Lu, desejo tudo de bom para você!", "Ohana", "Aniversários são muitos importantes", "Toddy é melhor que Nescau"];
     var FalasLa = ["Experlliarmus", "wingardium leviosa"];
     var FalasYa = ["O importante é o que importa", "Sempre confie em seu espírito", "As vezes corações frio só precisa de um sorriso quente", "A cada passo uma nova jornada"];
@@ -172,24 +173,38 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
            ImgCentro.src= "img/imgvazia.png";
             if(el.id == "btnju" ){
                 Pessoa.src="Pessoas/Ju.png"
+                name.setAttribute("data-content", "Julia");
+
                             } 
             if(el.id == "btnla" ){
                 Pessoa.src="Pessoas/La.png"
+                name.setAttribute("data-content", "Laura");
+
             } 
             if(el.id == "btnya"){
                 Pessoa.src="Pessoas/Ya.png"
+                name.setAttribute("data-content", "Yago");
+
             } 
             if(el.id == "btnho"){
                 Pessoa.src="Pessoas/Ho.png"
+                name.setAttribute("data-content", "Hortência");
+
             } 
             if(el.id == "btnsa"){
                 Pessoa.src="Pessoas/Sa.png"
+                name.setAttribute("data-content", "Savic");
+
             } 
             if(el.id == "btnlu"){
                 Pessoa.src="Pessoas/Lu.png"
+                name.setAttribute("data-content", "Luísa");
+
             } 
             if(el.id == "btnca"){
                 Pessoa.src="Pessoas/Carol.png"
+                name.setAttribute("data-content", "Boné");
+
             }
             
         });
