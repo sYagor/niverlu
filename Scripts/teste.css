@@ -85,7 +85,7 @@ li{
   box-sizing: border-box;
   margin-left: 30px;
   margin-right:30px;
-  margin-top: 1px;
+  margin-top: 20px;
 }
 .caixatexto .conteudo{
   flex-grow: 1;
@@ -187,8 +187,8 @@ li{
 
 iframe{
   text-align: center;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
 }
 
 h2{
