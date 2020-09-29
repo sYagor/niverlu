@@ -66,7 +66,7 @@ li{
 }
 .Blackbox{
   background-color:  #b993ed; 
-  height: 360px;
+  height: 80%;
   width: 70%;
   border-color: blueviolet;
   border-style: groove;
@@ -85,7 +85,7 @@ li{
   box-sizing: border-box;
   margin-left: 30px;
   margin-right:30px;
-  margin-top: 5px;
+  margin-top: 1px;
 }
 .caixatexto .conteudo{
   flex-grow: 1;
@@ -132,17 +132,17 @@ li{
  
  #FtEsquerda{
   margin-left: 4.2%;
-  margin-top: 3%;
-  width: 320px;
+  margin-top: 2%;
+  width: 31%;
 } 
 #ImgCentro{
   position: absolute;
-  margin-left: 2.5%;
+  margin-left: 3.8%;
   margin-top: 6.5%;
-  width: 200px;
+  width: 11%;
 }
 #FtDireita{
-  width: 320px;
+  width: 31%;
   margin-left: 27%;
 }
 
