@@ -176,7 +176,7 @@ li{
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
+  height: 800px;
 }
 
 .content-video{
@@ -194,7 +194,7 @@ iframe{
 }
 
 h2{
-  padding: 20px;
+  padding: 60px;
   text-align: center;
   color: white;
   font-family: cursive;
@@ -231,7 +231,7 @@ h2{
 }
 .parabens{
   text-align: center;
-  height: 100vh;
+  height: 90%;
   background-color: rgba(255, 255, 255, 0.5);
 
 }
@@ -240,4 +240,19 @@ h2{
   width: 50%;
   height: auto;
 
+}
+footer{
+  background-image: url("rd.png");
+  background-size: contain ;
+  height: 80px;
+}
+
+footer p{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-family: Arial;
+    padding: 25px;
+    text-align: center;
+    text-shadow: 0.08em 0.08em rgba(185, 147, 237, 0.5);
 }
