@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var tocando = false;
 
     BtnV2.addEventListener("click", function(){
-        Video.src="https://www.youtube.com/embed/fmI_Ndrxy14"; 
+        Video.src="https://www.youtube.com/embed/Cu3W8QCalq4"; 
     });
     BtnV.addEventListener("click", function(){
         Video.src="https://www.youtube.com/embed/FGBhQbmPwH8"; 
