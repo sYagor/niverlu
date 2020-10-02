@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
 
 
     BtnMusica.addEventListener("click", function(){
-        som.src = Musica[i];
+        som.src = Musica[1];
         if (tocando) {
             som.pause();
             tocando = false;

@@ -256,3 +256,9 @@ footer p{
     text-align: center;
     text-shadow: 0.08em 0.08em rgba(185, 147, 237, 0.5);
 }
+
+.ftpara:hover{
+  filter: drop-shadow( 3px 3px 3px #b993ed );
+  transform: translate(-3px, -3px);
+  transition: 0.5s ease-in-out;
+}
