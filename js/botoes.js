@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FtEsquerda = document.getElementById("FtEsquerda");
     var ImgCentro = document.getElementById("ImgCentro");
     var BtnMusica = document.getElementById("Gato");
-    
     var Fala = document.getElementById("falas");
     var som = document.getElementById("audio");
     var Video = document.getElementById("vd");
@@ -31,10 +30,24 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FotosCa = ["Fts/CarolFt1.png","Fts/CarolFt2.png","Fts/CarolFt3.png","Fts/CarolFt4.png","Fts/CarolFt5.png","Fts/CarolFt6.png","Fts/CarolFt7.png","Fts/CarolFt8.png"];
     var Musica = ["Musica/OneMoreTime.mp3", "Musica/noise.mp3", "Musica/Monsoon.mp3","Musica/DontJump.mp3"];
     var btnselecionado;
+    var resp = document.getElementById("resposta");
+    var respbtn = document.getElementById("respostabtn");
+    var modal = document.getElementById("myModal");
+
+
+
     var i = 0;
     var f= 0;
     var tocando = false;
 
+    respbtn.addEventListener("click", function(){ //Fechar o modal 
+        if(resp.value=="42"){    
+            modal.style.display = "none";
+            console.log("foi")
+        }else{alert("Resposta errada!");}
+    });
+
+     //Botões para a troca de vídeo
     BtnV2.addEventListener("click", function(){
         Video.src="https://www.youtube.com/embed/YcPuu_XRkGY"; 
     });
@@ -42,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
         Video.src="https://www.youtube.com/embed/FGBhQbmPwH8"; 
     });
 
-
+    //Tocar som
     BtnMusica.addEventListener("click", function(){
         som.src = Musica[1];
         if (tocando) {
@@ -55,6 +68,8 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
 
          } 
      });
+
+    //Falas
     botaoavanca.addEventListener("click", function(){
         if(btnselecionado == "btnju" ) {
             Fala.textContent= FalasJu[i];
@@ -162,6 +177,8 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
         } 
     
     });
+
+    //Troca de imgs e personagens
     Array.prototype.forEach.call(botoes, function(el) {
         el.addEventListener("click", function(){ //el é o botão que clicou
            Fala.textContent= ""
@@ -210,5 +227,6 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
         });
     });
   
-});              
+});   
+
 

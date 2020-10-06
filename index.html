@@ -6,10 +6,18 @@
         <link rel="stylesheet" href="Scripts/Reset.css"/>        
         <!-- <link rel="stylesheet" href="Scripts/Style.css" /> -->
         <link rel="stylesheet" href="Scripts/teste.css" />
-                
+        
         <link rel="icon" type="imagem/png" href="img/capa.png" />
     </head>
-    <body>
+    <body onload="entrar()">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <label id="Pergunta">Qual é a resposta?</label> <input type = "text" id="resposta">
+                    <button id="respostabtn">Responder</button>
+                 
+                </div>
+            </div>
+
         <header>
             <nav>   
                 <div class="caixa">
@@ -24,6 +32,7 @@
                 </div>
             </nav>
         </header>   
+
         <main id="principal">   
             <ul class="tabDireita">
                 <li><button id="btnju" class="btnPessoa"><img src="Bts/JuliaBtn.png"> </button></li>

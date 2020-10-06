@@ -1,3 +1,72 @@
+.modal {
+  position: fixed; 
+  z-index: 999;
+  padding-top: 100px; 
+  left: 0;
+  top: -100px;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+  background-image: url("Fundo.png");
+  margin: auto;
+  padding: 20px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  flex-flow: column nowrap;
+
+}
+
+/* The Close Button */
+.close {
+
+  margin: 20px;
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#Pergunta{
+  margin: 20px;
+  color: purple;
+  text-align: center;
+  font-size: 70px;
+}
+#resposta{
+  color: #b993ed;
+  font-size: 20px;
+  height: 30px;
+  text-align: center;
+}
+#respostabtn{
+  margin: 20px;
+
+  /*position: relative;
+  top: 20%;
+  right: 25%; */
+  background-color: #b993ed;
+  color: white;
+  font-size: 30px;
+  width: 250px;
+  height: 40px;
+  border-radius: 30px;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 *{margin : 0 ; padding: 0;  scroll-behavior: smooth;
 }
 body {
@@ -206,7 +275,7 @@ h2{
   border:none;
   background: transparent;
   cursor: pointer;
-  z-index: 999;
+  z-index: 998;
 }
 
 .btnPessoa2:hover img{
