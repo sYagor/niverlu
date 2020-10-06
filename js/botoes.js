@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     respbtn.addEventListener("click", function(){ //Fechar o modal 
         if(resp.value=="42"){    
             modal.style.display = "none";
+            tudo.style.display= "block";
             console.log("foi")
         }else{alert("Resposta errada!");}
     });

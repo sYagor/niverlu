@@ -1,3 +1,6 @@
+#tudo{
+  display: none;
+}
 .modal {
   position: fixed; 
   z-index: 999;
@@ -39,6 +42,7 @@
   color: purple;
   text-align: center;
   font-size: 70px;
+  border: none;
 }
 #resposta{
   color: #b993ed;
@@ -122,7 +126,7 @@ li{
 
 }
 
-.btnPessoa:focus, #BtnAvanca:focus{
+.btnPessoa:focus, #BtnAvanca:focus, #respostabtn{
   outline: none;
 }
 
