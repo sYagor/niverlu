@@ -1,6 +1,20 @@
 #tudo{
   display: none;
 }
+
+img.fix-size {
+  width:130px;
+  height:130px;
+}
+#animacao {
+  height:130px;
+  display: none;
+  overflow: hidden;
+  color:#458C85;
+}
+
+
+
 .modal {
   position: fixed; 
   z-index: 999;

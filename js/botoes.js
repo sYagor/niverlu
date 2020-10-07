@@ -44,8 +44,10 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
         if(resp.value=="42"){    
             modal.style.display = "none";
             tudo.style.display= "block";
-            console.log("foi")
-        }else{alert("Resposta errada!");}
+        }else{
+        animacao.style.display="block";  
+     
+    }
     });
 
      //Botões para a troca de vídeo
