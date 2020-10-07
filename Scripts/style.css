@@ -14,7 +14,7 @@ img.fix-size {
   width: 280px;
   overflow-y: hidden;
   opacity: 0;
-  user-select: none;
+  pointer-events: none;
 }
 
 #animacao .certa{

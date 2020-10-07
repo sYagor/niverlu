@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
                 errado.classList.toggle("rodando");
                 setTimeout(() => {
                     modal.style.opacity="0";
+                    modal.style.pointerEvents='none';
                     tudo.style.opacity= "1";
                 }, 1000);
             }, 1000);
