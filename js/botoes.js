@@ -33,21 +33,46 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var resp = document.getElementById("resposta");
     var respbtn = document.getElementById("respostabtn");
     var modal = document.getElementById("myModal");
-
+    
 
 
     var i = 0;
     var f= 0;
     var tocando = false;
-
+    var erros = 0;
     respbtn.addEventListener("click", function(){ //Fechar o modal 
+        animacao.style.opacity="1";  
+        let certo = document.querySelector(".certa");
+        let errado = document.querySelector(".errada");
+        certo.classList.toggle("rodando");
+        errado.classList.toggle("rodando");
+
         if(resp.value=="42"){    
-            modal.style.display = "none";
-            tudo.style.display= "block";
+           
+            setTimeout(() => {
+                certo.classList.toggle("rodando");
+                errado.style.opacity="0";
+                certo.style.opacity="1";
+                errado.classList.toggle("rodando");
+                setTimeout(() => {
+                    modal.style.opacity="0";
+                    tudo.style.opacity= "1";
+                }, 1000);
+            }, 1000);
+
         }else{
-        animacao.style.display="block";  
-     
-    }
+            erros++;
+            setTimeout(() => {
+                certo.classList.toggle("rodando");
+                certo.style.opacity="0";
+                errado.classList.toggle("rodando");
+                erros=(erros>3)?3:erros;
+                document.querySelector(".img-error").setAttribute("src","img/fail"+ erros +".gif");
+            }, 1000);
+               
+            
+        }
+
     });
 
      //Botões para a troca de vídeo
