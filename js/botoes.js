@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FotosLu = ["Fts/LuisaFt1.png","Fts/LuisaFt9.png","Fts/LuisaFt3.png","Fts/LuisaFt2.png","Fts/LuisaFt5.png","Fts/LuisaFt6.png","Fts/LuisaFt7.png","Fts/LuisaFt8.png"];
     var FotosHo = ["Fts/HortenciaFt1.png","Fts/HortenciaFt2.png","Fts/HortenciaFt3.png","Fts/HortenciaFt4.png","Fts/HortenciaFt5.png","Fts/HortenciaFt6.png","Fts/HortenciaFt7.png","Fts/HortenciaFt8.png","Fts/HortenciaFt9.png","Fts/HortenciaFt10.png","Fts/HortenciaFt11.png","Fts/HortenciaFt12.png","Fts/HortenciaFt13.png","Fts/HortenciaFt14.png","Fts/HortenciaFt15.png","Fts/HortenciaFt16.png","Fts/HortenciaFt17.png","Fts/HortenciaFt18.png"];
     var FotosCa = ["Fts/CarolFt1.png","Fts/CarolFt2.png","Fts/CarolFt3.png","Fts/CarolFt4.png","Fts/CarolFt5.png","Fts/CarolFt6.png","Fts/CarolFt7.png","Fts/CarolFt8.png"];
-    var Musica = ["Musica/OneMoreTime.mp3", "Musica/noise.mp3", "Musica/Monsoon.mp3","Musica/DontJump.mp3"];
+    var Musica = ["Musica/OneMoreTime.mp3", "Musica/noise.mp3", "Musica/Monsoon.mp3","Musica/DontJump.mp3","Musica/Giants.mp3","Musica/Awaken.mp3"];
     var MusicaCa ="Musica/Xuxa.mp3";
     var btnselecionado;
     var resp = document.getElementById("resposta");
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var modal = document.getElementById("myModal");
     
 
-
+    var m = 0;
     var i = 0;
     var f= 0;
     var tocando = false;
@@ -87,7 +87,8 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
 
     //Tocar som
     BtnMusica.addEventListener("click", function(){
-        som.src = Musica[1];
+        som.src = Musica[m];
+        console.log(Musica[m])
         if (tocando) {
             som.pause();
             tocando = false;
@@ -95,7 +96,10 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
          } else {
             som.play();
             tocando = true;
-
+            m++;
+            if(m > 5){
+                m = 0;
+            }
          } 
      });
 
@@ -232,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
             if(el.id == "btnya"){
                 Pessoa.src="Pessoas/Ya.png"
                 name.setAttribute("data-content", "Yago");
-
+           
             } 
             if(el.id == "btnho"){
                 Pessoa.src="Pessoas/Ho.png"
