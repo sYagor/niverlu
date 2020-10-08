@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var name = document.querySelector(".caixatexto");
     var FalasJu = ["Parabéns Lu, desejo tudo de bom para você!", "Ohana", "Aniversários são muitos importantes", "Toddy é melhor que Nescau"];
     var FalasLa = ["Experlliarmus", "wingardium leviosa"];
-    var FalasYa = ["Feliz aniversário Lu! Desejo a você muitos anos de vida, paz e amor. Espero que nesse seu 25º aniversário você consiga conquistar tudo o que sempre quis e sonhou.", "Seu querido parceiro, amigo, amante e eterno admirador vai estar sempre com você em todos os momentos.", "Um grande abraço e um beijo com todo o amor e carinho que você conquistou de mim, minha eterna inspiração, amo você!", "E eu não sou fofo!"];
+    var FalasYa = ["Feliz aniversário Lu! Desejo a você muitos anos de vida, paz e amor. Espero que nesse seu 25º aniversário você consiga conquistar tudo o que sempre quis e sonhou.", "Seu querido parceiro, amigo, amante e eterno admirador vai estar sempre com você em todos os momentos que precisar.❤️", "Um grande abraço e um beijo com todo o amor e carinho que você conquistou de mim, minha eterna inspiração.  ❤️ Amo muito você! ❤️", "E eu não sou fofo!"];
     var FalasHo = ["1. O começo...","Campinas, 17 de outubro de 1995 uma bebê de olhos castanhos claros, sobre sua cabeça fios castanhos, chorava desorientada, com tudo.", "Nasce ali a segunda filha de um lindo casal, Luciana e José Luis, Desde cedo seu sorriso contagiava a todos em sua volta.",
     "Sua mãe a nomeou Luísa, a guerreira gloriosa, com o passar dos anos a criança ganhou grande apreço por livros e pela", "Cultura Geek, houve grandes momentos em sua vida, a formatura do Ensino médio, do curso de confeitaria, caligrafia,", "Do curso de inglês ou daquela vez que derrotou o alfaiate no The Witcher 2. Assim como todos também teve seus baixos,",
     "Mas conseguiu superar tudo com a sua força de vontade e ajuda da sua família, hoje é ainda mais incrível e especial que ontem.","Tenho muito orgulho por estar contado um resumo da vida dela minha amada dona, Luísa, Feliz aniversário!!!!", "Fim!"];
     var FalasLu = ["Hmm?", "Hmm...", "Hmm!", "Fuck"];
     var FalasSa = ["Miau!", "Miau..."];
-    var FalasCa = ["Qual é a fruta favorita do Beethoven?","Ba - na - na - naaaaaa","Feliz Aniversário Lu!","Muitos anos de vida"];
+    var FalasCa = ["Oi Lu, menina primeiro de tudo eu queria te desejar um maravilhoso aniversário de quarentena!! acho que a gente nunca iria imaginar que isso aconteceria, ","mas já que estamos aqui, que ele seja tão bom quanto os outros. Quero te desejar também tudo de bom desse mundo e toda a felicidade, umas terapia pra enfrentar seja lá ", "o que é isso que a gente tá passando agora 😫 e que você conquiste tudo o que quer. Queria aproveitar pra dizer que você sempre foi uma amiga maravilhosa","a gente se conhece a muitos anos e apesar de morarmos longe e de ter perdido o contrato por um certo tempo, eu fico muito feliz de que a gente voltou a conversar e ", "que continuamos sendo amiguinhas, podendo falar sobre qualquer coisa, literalmente, a gente tem umas conversa aleatória que são boas demais KKKK.", "Obrigada pelo apoio que você vem me dado e eu só espero estar retribuindo tudo isso, quero que saiba que você é muito importante pra mim, sempre foi, e que vou estar aqui pra você se precisar ou não. ", "Pode falar comigo sobre o que quiser, to sempre aí pra ouvir ❤️ Parabéns de novo, amo muito você e tô com saudades, espero te ver em breve."];
     var FotosJu = ["Fts/JuliaFt1.png","Fts/JuliaFt2.png","Fts/JuliaFt3.png","Fts/JuliaFt4.png","Fts/JuliaFt5.png","Fts/JuliaFt6.png","Fts/JuliaFt7.png","Fts/JuliaFt8.png"]
     var FotosLa = ["Fts/LauraFt1.png","Fts/LauraFt3.png","Fts/LauraFt5.png","Fts/LauraFt6.png"];
     var FotosYa = ["Fts/YagoFt1.png","Fts/YagoFt2.png","Fts/YagoFt3.png","Fts/YagoFt4.png","Fts/YagoFt5.png","Fts/YagoFt6.png","Fts/YagoFt7.png","Fts/YagoFt8.png",];
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FotosHo = ["Fts/HortenciaFt1.png","Fts/HortenciaFt2.png","Fts/HortenciaFt3.png","Fts/HortenciaFt4.png","Fts/HortenciaFt5.png","Fts/HortenciaFt6.png","Fts/HortenciaFt7.png","Fts/HortenciaFt8.png","Fts/HortenciaFt9.png","Fts/HortenciaFt10.png","Fts/HortenciaFt11.png","Fts/HortenciaFt12.png","Fts/HortenciaFt13.png","Fts/HortenciaFt14.png","Fts/HortenciaFt15.png","Fts/HortenciaFt16.png","Fts/HortenciaFt17.png","Fts/HortenciaFt18.png"];
     var FotosCa = ["Fts/CarolFt1.png","Fts/CarolFt2.png","Fts/CarolFt3.png","Fts/CarolFt4.png","Fts/CarolFt5.png","Fts/CarolFt6.png","Fts/CarolFt7.png","Fts/CarolFt8.png"];
     var Musica = ["Musica/OneMoreTime.mp3", "Musica/noise.mp3", "Musica/Monsoon.mp3","Musica/DontJump.mp3"];
+    var MusicaCa ="Musica/Xuxa.mp3";
     var btnselecionado;
     var resp = document.getElementById("resposta");
     var respbtn = document.getElementById("respostabtn");
@@ -198,10 +199,11 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
                 f++;
                 FtDireita.src = FotosCa[f];
                 f++;
-            } 
+            }
             ImgCentro.src= "img/CarolSimbolo.png"
             if(i > FalasCa.length){
                 i=0;
+                som.pause();
              }       
         } 
     
@@ -250,9 +252,11 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
             if(el.id == "btnca"){
                 Pessoa.src="Pessoas/Carol.png"
                 name.setAttribute("data-content", "Boné");
-
+                som.src = MusicaCa;
+                som.currentTime = 40;
+                som.volume = 0.2;
+                som.play();
             }
-            
         });
     });
   
