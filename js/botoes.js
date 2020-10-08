@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
     var FotosSa = ["Fts/SavicFt1.png","Fts/SavicFt2.png","Fts/SavicFt3.png","Fts/SavicFt4.png"];
     var FotosLu = ["Fts/LuisaFt1.png","Fts/LuisaFt9.png","Fts/LuisaFt3.png","Fts/LuisaFt2.png","Fts/LuisaFt5.png","Fts/LuisaFt6.png","Fts/LuisaFt7.png","Fts/LuisaFt8.png"];
     var FotosHo = ["Fts/HortenciaFt1.png","Fts/HortenciaFt2.png","Fts/HortenciaFt3.png","Fts/HortenciaFt4.png","Fts/HortenciaFt5.png","Fts/HortenciaFt6.png","Fts/HortenciaFt7.png","Fts/HortenciaFt8.png","Fts/HortenciaFt9.png","Fts/HortenciaFt10.png","Fts/HortenciaFt11.png","Fts/HortenciaFt12.png","Fts/HortenciaFt13.png","Fts/HortenciaFt14.png","Fts/HortenciaFt15.png","Fts/HortenciaFt16.png","Fts/HortenciaFt17.png","Fts/HortenciaFt18.png"];
-    var FotosCa = ["Fts/CarolFt1.png","Fts/CarolFt2.png","Fts/CarolFt3.png","Fts/CarolFt4.png","Fts/CarolFt5.png","Fts/CarolFt6.png","Fts/CarolFt7.png","Fts/CarolFt8.png"];
+    var FotosCa = ["Fts/CarolFt1.png","Fts/CarolFt2.png","Fts/CarolFt3.png","Fts/CarolFt4.png","Fts/CarolFt5.png","Fts/CarolFt6.png","Fts/CarolFt7.png","Fts/CarolFt8.png","Fts/CarolFt9.png","Fts/CarolFt10.png","Fts/CarolFt11.png","Fts/CarolFt12.png","Fts/CarolFt13.png","Fts/CarolFt14.png"];
     var Musica = ["Musica/OneMoreTime.mp3", "Musica/noise.mp3", "Musica/Monsoon.mp3","Musica/DontJump.mp3","Musica/Giants.mp3","Musica/Awaken.mp3"];
     var MusicaCa ="Musica/Xuxa.mp3";
     var btnselecionado;
