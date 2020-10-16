@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function(){  // Só vai rodar Js q
            ImgCentro.src= "img/imgvazia.png";
             if(el.id == "btnju" ){
                 Pessoa.src="Pessoas/Ju.png"
-                name.setAttribute("data-content", "Julia");
+                name.setAttribute("data-content", "Ju");
 
                             } 
             if(el.id == "btnla" ){
